@@ -1,29 +1,75 @@
 <!DOCTYPE html>
-<html ng-app>
+<html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
         <title>KAWANI - DEVELOPMENT</title>
 
         <link rel="stylesheet" href="assets/libs/bootstrap/3.3.7/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="assets/libs/ionicons/2.0.1/css/ionicons.css">
         <link rel="stylesheet" href="assets/libs/adminLTE/2.3.11/dist/css/AdminLTE.css">
+        <link rel="stylesheet" href="assets/libs/adminLTE/2.3.11/dist/css/skins/skin-blue.min.css">
 
     </head>
-    <body>
+    <body class="hold-transition skin-blue sidebar-mini" ng-app="KawaniApp">
+        <div class="wrapper">
+            <main-topbar></main-topbar>
+            <main-sidebar></main-sidebar>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-ls-12">
-                    <h1>Bootstrap heading</h1>
-                    <input type="text" name="full_name" value="Guest" ng-model="full_name"><br>
-                    <p>Hello {{ full_name }} from KAWANI</p>
-                </div>
+            <div class="content-wrapper">
+                <section class="content-header">
+                    <h1>Page Header <small>Optional description</small></h1>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-dashboard"></i> Level
+                            </a>
+                        </li>
+                        <li class="active">Here</li>
+                    </ol>
+                </section>
+                <section class="content">
+                    <ui-view></ui-view>
+                </section>
             </div>
+
+            <main-footer></main-footer>
+
+
         </div>
 
-        <script src="assets/libs/angularJS/1.6.4/angular.js" charset="utf-8"></script>
-        <script src="assets/libs/angular-ui-router/angular-ui-router.js" charset="utf-8"></script>
-        <script src="assets/libs/jquery/3.2.1/jquery.js" charset="utf-8"></script>
-        <script src="assets/libs/bootstrap/3.3.7/js/bootstrap.js" charset="utf-8"></script>
-        <script src="assets/libs/adminLTE/2.3.11/dist/js/app.js" charset="utf-8"></script>
+        <script src="assets/libs/jquery/3.2.1/jquery.js"></script>
+        <script src="assets/libs/bootstrap/3.3.7/js/bootstrap.js"></script>
+        <script src="assets/libs/adminLTE/2.3.11/dist/js/app.js"></script>
+
+        <script src="assets/libs/angularJS/1.6.4/angular.js"></script>
+        <script src="assets/libs/angular-ui-router/angular-ui-router.js"></script>
+        <script src="assets/libs/angularJS/1.6.4/angular-route.js"></script>
+
+        <script src="app/app.module.js"></script>
+        <script src="app/app.config.js"></script>
+
+        <!-- APP WIDGETS -->
+        <script src="app/widgets/widgets.module.js"></script>
+        <script src="app/widgets/main-topbar/main-topbar.component.js"></script>
+        <script src="app/widgets/main-sidebar/main-sidebar.component.js"></script>
+        <script src="app/widgets/main-footer/main-footer.component.js"></script>
+        <script src="app/widgets/control-sidebar/control-sidebar.component.js"></script>
+
+        <!-- APP CORE MODULES -->
+        <script src="app/core/core.module.js"></script>
+        <script src="app/core/employee/employee.module.js"></script>
+        <script src="app/core/employee/employee.service.js"></script>
+
+        <!-- APP COMPONENTS -->
+        <script src="app/components/components.module.js"></script>
+        <script src="app/components/employees/employees.module.js"></script>
+        <script src="app/components/employees/employees.component.js"></script>
+        <script src="app/components/employee-detail/employee-detail.module.js"></script>
+        <script src="app/components/employee-detail/employee-detail.component.js"></script>
+        <script src="app/components/test/test.component.js"></script>
     </body>
 </html>
