@@ -1,0 +1,20 @@
+<button type="button" name="button" class="btn btn-primary" ng-click="clickHandler()">Click Here...</button>
+<table class="table table-stripped table-border">
+    <thead>
+        <tr>
+            <!-- <th>Action</th> -->
+            <th>Code</th>
+            <th>Registered Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="company in companies">
+            <!-- <td><a ui-sref="companylist.detail({companyId: company.id})">View Details</a></td> -->
+            <td>{{ company.code }}</td>
+            <td>{{ company.registered_name }}</td>
+            <td>{{ company.description }}</td>
+        </tr>
+    </tbody>
+</table>
+<div ui-view></div>

@@ -1,7 +1,7 @@
 /**
  * Some class description here...
  *
- * @package     package
+ * @package     Employees
  * @subpackage  subpackage
  * @category    category
  * @author      cristhian.kevin@systemantech.com
@@ -11,6 +11,6 @@
 
     'use strict';
 
-    angular.module('core.employee', []);
+    angular.module('employee', []);
 
 })();

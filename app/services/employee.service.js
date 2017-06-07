@@ -10,7 +10,7 @@
 (function() {
     'use strict';
 
-    var app = angular.module('core.employee');
+    var app = angular.module('service.employee', []);
 
     app.factory('EmployeeService', ['$q', '$http', function($q, $http) {
 
@@ -30,6 +30,7 @@
             var defer = $q.defer();
 
             $http.get(baseURL).then(function (response) {
+                console.log('response: ', response);
                 defer.resolve(response);
             });
 

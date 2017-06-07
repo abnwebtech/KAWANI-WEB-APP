@@ -19,6 +19,7 @@
 
             EmployeeService.list().then(function (res) {
                 $scope.employees = res.data.result;
+                console.log(res);
             });
 
             $scope.clickHandler = function() {

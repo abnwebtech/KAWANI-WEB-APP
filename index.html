@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
-        <title>KAWANI - DEVELOPMENT</title>
+        <title>KAWANI Human Resource Information System : DEVELOPMENT</title>
 
         <link rel="stylesheet" href="assets/libs/bootstrap/3.3.7/css/bootstrap.css">
         <link rel="stylesheet" href="assets/libs/font-awesome/4.7.0/css/font-awesome.css">
@@ -38,7 +38,6 @@
 
             <main-footer></main-footer>
 
-
         </div>
 
         <script src="assets/libs/jquery/3.2.1/jquery.js"></script>
@@ -53,23 +52,28 @@
         <script src="app/app.config.js"></script>
 
         <!-- APP WIDGETS -->
-        <script src="app/widgets/widgets.module.js"></script>
+        <script src="app/widgets/com.kawani.widgets.js"></script>
         <script src="app/widgets/main-topbar/main-topbar.component.js"></script>
         <script src="app/widgets/main-sidebar/main-sidebar.component.js"></script>
         <script src="app/widgets/main-footer/main-footer.component.js"></script>
         <script src="app/widgets/control-sidebar/control-sidebar.component.js"></script>
 
-        <!-- APP CORE MODULES -->
-        <script src="app/core/core.module.js"></script>
-        <script src="app/core/employee/employee.module.js"></script>
-        <script src="app/core/employee/employee.service.js"></script>
+        <!-- APP SERVICES -->
+        <script src="app/services/com.kawani.service.js"></script>
+        <script src="app/services/company.service.js"></script>
+        <script src="app/services/employee.service.js"></script>
+
+        <!-- APP MODULES -->
+        <script src="app/modules/com.kawani.module.js"></script>
+        <script src="app/modules/attendance.module.js"></script>
+        <script src="app/modules/employee.module.js"></script>
+        <script src="app/modules/payroll.module.js"></script>
+        <script src="app/modules/recruitment.module.js"></script>
+        <script src="app/modules/reports.module.js"></script>
+        <script src="app/modules/system.module.js"></script>
 
         <!-- APP COMPONENTS -->
-        <script src="app/components/components.module.js"></script>
-        <script src="app/components/employees/employees.module.js"></script>
-        <script src="app/components/employees/employees.component.js"></script>
-        <script src="app/components/employee-detail/employee-detail.module.js"></script>
-        <script src="app/components/employee-detail/employee-detail.component.js"></script>
-        <script src="app/components/test/test.component.js"></script>
+        <script src="app/modules/components/system/company/company-list.component.js"></script>
+
     </body>
 </html>

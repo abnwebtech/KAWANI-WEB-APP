@@ -1,7 +1,7 @@
 /**
  * Some class description here...
  *
- * @package     package
+ * @package     Attendance
  * @subpackage  subpackage
  * @category    category
  * @author      cristhian.kevin@systemantech.com
@@ -11,10 +11,6 @@
 
     'use strict';
 
-    angular.module('components', [
-        'test',
-        'employee-list',
-        'employee-detail'
-    ]);
+    angular.module('attendance', []);
 
 })();

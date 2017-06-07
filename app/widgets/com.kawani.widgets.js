@@ -11,6 +11,11 @@
 
     'use strict';
 
-    angular.module('core', ['core.employee']);
+    angular.module('com.kawani.widgets', [
+        'main-topbar',
+        'main-sidebar',
+        'main-footer',
+        'control-sidebar'
+    ]);
 
 })();

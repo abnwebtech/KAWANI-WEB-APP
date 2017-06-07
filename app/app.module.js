@@ -2,9 +2,9 @@
 
 var app = angular.module('KawaniApp', [
     'ui.router',
-    'widgets',
-    'core',
-    'components'
+    'com.kawani.widgets',
+    'com.kawani.services',
+    'com.kawani.modules'
 ]);
 
 app.run(['$state', function($state) {

@@ -1,7 +1,7 @@
 /**
  * Some class description here...
  *
- * @package     package
+ * @package     Recruitment
  * @subpackage  subpackage
  * @category    category
  * @author      cristhian.kevin@systemantech.com
@@ -11,11 +11,6 @@
 
     'use strict';
 
-    angular.module('widgets', [
-        'main-topbar',
-        'main-sidebar',
-        'main-footer',
-        'control-sidebar'
-    ]);
+    angular.module('recruitment', []);
 
 })();
